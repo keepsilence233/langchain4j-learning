@@ -21,7 +21,15 @@ LangChain4j 学习项目，依赖配置参考 [快速开始](https://langchain4j
 export OPENAI_API_KEY=sk-...
 ```
 
-不设置时自动使用官方 demo 密钥（请求经 langchain4j.dev 代理，仅限 `gpt-4o-mini`，有配额，仅供演示）。
+使用 DeepSeek 等兼容 OpenAI 协议的服务时，再加上地址和模型名：
+
+```bash
+export OPENAI_BASE_URL=https://api.deepseek.com/v1
+export OPENAI_API_KEY=sk-...
+export OPENAI_MODEL=deepseek-chat
+```
+
+不设置 `OPENAI_API_KEY` 时自动使用官方 demo 密钥（请求经 langchain4j.dev 代理，仅限 `gpt-4o-mini`，有配额，仅供演示）。
 
 ## 示例
 
